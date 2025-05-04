@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Descrição Geral do Projeto
 
-## Getting Started
+Esta é uma aplicação web de controle financeiro pessoal, desenvolvida com React, Next.js (App Router), CSS puro e ícones do Lucide.
+O objetivo é fornecer uma visualização clara e interativa das entradas, saídas e saldo de um usuário, além de exibir análises por categoria e listar transações recentes.
 
-First, run the development server:
+Principais Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Cards Resumo: Mostram entradas, saídas e saldo do período.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Seção de Análise: Espaço reservado para gráficos e estatísticas visuais.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Categorias: Lista de categorias com quantidade e valor gasto.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Transações: Tabela de transações detalhadas com ícones, datas, tipos e bancos.
 
-## Learn More
+Tecnologias Usadas
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js com App Router
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- React
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- CSS Puro
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Lucide Icons
