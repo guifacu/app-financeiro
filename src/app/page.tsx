@@ -3,9 +3,9 @@
 import {
   PiggyBank,
   PlusCircle,
-  ArrowDownCircle,
-  ArrowUpCircle,
-  Wallet,
+  BanknoteArrowDown,
+  BanknoteArrowUp,
+  Banknote,
   ShoppingCart,
   Gamepad2,
   Lock,
@@ -20,7 +20,7 @@ export default function Home() {
       <div className="cabecalho">
         <PiggyBank size={45} className="icone verde" />
         <button className="botao-adicionar">
-          <PlusCircle size={26} className="icone" />
+          <PlusCircle size={20} className="icone" />
         </button>
       </div>
 
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="cartao">
           <div className="cartao-cabecalho">
             <span>Entradas</span>
-            <ArrowDownCircle className="icone verde" size={25} />
+            <BanknoteArrowDown className="icone branco" size={30} />
           </div>
           <p className="valor verde">R$ 43.231,00</p>
           <p className="descricao">Somada todas as entradas do período.</p>
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="cartao">
           <div className="cartao-cabecalho">
             <span>Saídas</span>
-            <ArrowUpCircle className="icone vermelho" size={25} />
+            <BanknoteArrowUp className="icone branco" size={30} />
           </div>
           <p className="valor vermelho">R$ 2.265,05</p>
           <p className="descricao">Somada todas as saídas do período.</p>
@@ -44,7 +44,7 @@ export default function Home() {
         <div className="cartao">
           <div className="cartao-cabecalho">
             <span>Balanço</span>
-            <Wallet className="icone branco" size={25} />
+            <Banknote className="icone branco" size={30} />
           </div>
           <p className="valor verde">R$ 40.965,95</p>
           <p className="descricao">Somada todas as entradas e saídas do período.</p>
@@ -95,9 +95,10 @@ export default function Home() {
       </div>
 
       <div className="transacoes">
-        <h2>Transações</h2>
+        <h2 className='titulo-secao'>Transações</h2>
+
         <div className="cabecalho-tabela">
-          <span className="coluna span-2">Descrição</span>
+          <span className="coluna">Descrição</span>
           <span className="coluna">Tipo</span>
           <span className="coluna">Valor</span>
           <span className="coluna">Banco</span>
@@ -106,7 +107,7 @@ export default function Home() {
         </div>
 
         <div className="transacao">
-          <div className="coluna span-2">
+          <div className="coluna">
             <ShoppingCart size={16} />
             Playstation
           </div>
@@ -118,7 +119,7 @@ export default function Home() {
         </div>
 
         <div className="transacao">
-          <div className="coluna span-2">
+          <div className="coluna">
             <ShoppingCart size={16} />
             Mercadinho do Jorjão
           </div>
@@ -130,7 +131,7 @@ export default function Home() {
         </div>
 
         <div className="transacao">
-          <div className="coluna span-2">
+          <div className="coluna">
             <ShoppingCart size={16} />
             HBO Max
           </div>
@@ -145,6 +146,3 @@ export default function Home() {
   );
 }
 
-
-  
-  
