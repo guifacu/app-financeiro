@@ -1,5 +1,5 @@
 body {
-  background-color: #121214;
+  background-color: #18181B;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -61,14 +61,14 @@ body {
 }
 
 .valor {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 4px;
 }
 
 .descricao {
   font-size: 12px;
-  color: #a1a1aa;
+  color: #6B7280;
 }
 
 .secao-central {
@@ -104,7 +104,7 @@ body {
 .categoria {
   background-color: #000000;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   font-size: 14px;
   padding: 8px;
   margin-bottom: 8px;
@@ -113,7 +113,7 @@ body {
 }
 
 .categoria.destaque {
-  background-color: #575757;
+  background-color: #27272A;
   color: white;
 }
 
@@ -149,11 +149,11 @@ body {
 }
 
 .verde {
-  color: #00c97a;
+  color: #10B981;
 }
 
 .vermelho {
-  color: #ff0000;
+  color: #F43F5E;
 }
 
 .titulo-secao {
