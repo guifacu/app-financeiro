@@ -1,0 +1,209 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./styles/globals.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/* Base */
+:root {
+  --color-background: #18181B;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #6B7280;
+  --color-success: #10B981;
+  --color-error: #F43F5E;
+  --color-card: #000000;
+  --color-card-highlight: #27272A;
+  --color-border: #2a2a2a;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+.conteiner {
+  padding: 32px 200px;
+}
+
+/* Header */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.icone {
+  color: var(--color-text);
+}
+
+.icone.branco {
+  color: var(--color-text);
+}
+
+.botao-adicionar {
+  background-color: var(--color-success);
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 38px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Cards */
+.cartoes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.cartao {
+  flex: 1 1;
+  background-color: var(--color-card);
+  border-radius: 21px;
+  padding: 16px;
+}
+
+.cartao-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.valor {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.descricao {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+/* Central Section */
+.secao-central {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.secao-analise,
+.secao-categorias {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Analysis */
+.analise {
+  flex: 2 1;
+  background-color: var(--color-card);
+  padding: 16px;
+  border-radius: 12px;
+  height: 300px;
+}
+
+/* Estilos do Recharts */
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.recharts-default-tooltip {
+  background-color: var(--color-card) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 8px !important;
+  padding: 8px !important;
+}
+
+.recharts-tooltip-label {
+  color: var(--color-text) !important;
+  margin-bottom: 4px !important;
+}
+
+.recharts-tooltip-item {
+  color: var(--color-text) !important;
+}
+
+.recharts-legend-item-text {
+  color: var(--color-text) !important;
+}
+
+/* Categories */
+.categorias {
+  flex: 1 1;
+  background-color: var(--color-card);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.categoria {
+  background-color: var(--color-card);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.categoria.destaque {
+  background-color: var(--color-card-highlight);
+  color: var(--color-text);
+}
+
+/* Transactions */
+.transacoes {
+  margin-top: 25px;
+}
+
+.cabecalho-tabela,
+.transacao {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 14px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.cabecalho-tabela {
+  color: #a1a1aa;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.transacao {
+  background-color: var(--color-card);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.transacao .coluna {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Utilities */
+.verde {
+  color: var(--color-success);
+}
+
+.vermelho {
+  color: var(--color-error);
+}
+
+.titulo-secao {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--color-text);
+} 

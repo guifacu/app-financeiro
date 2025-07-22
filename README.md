@@ -1,24 +1,58 @@
-Descrição Geral do Projeto
+# App Financeiro
 
-Esta é uma aplicação web de controle financeiro pessoal, desenvolvida com React, Next.js (App Router), CSS puro e ícones do Lucide.
-O objetivo é fornecer uma visualização clara e interativa das entradas, saídas e saldo de um usuário, além de exibir análises por categoria e listar transações recentes.
+Uma aplicação web para controle financeiro pessoal, desenvolvida com Next.js e TypeScript.
 
-Principais Funcionalidades
+## Funcionalidades
 
-- Cards Resumo: Mostram entradas, saídas e saldo do período.
+- Visualização de entradas, saídas e balanço
+- Análise gráfica de gastos
+- Categorização de despesas
+- Listagem de transações
+- Suporte a transações parceladas
 
-- Seção de Análise: Espaço reservado para gráficos e estatísticas visuais.
+## Tecnologias Utilizadas
 
-- Categorias: Lista de categorias com quantidade e valor gasto.
+- Next.js 15
+- React 19
+- TypeScript
+- Recharts (para gráficos)
+- Lucide React (para ícones)
+- Date-fns (para manipulação de datas)
+- Zod (para validação de dados)
 
-- Transações: Tabela de transações detalhadas com ícones, datas, tipos e bancos.
+## Estrutura do Projeto
 
-Tecnologias Usadas
+```
+src/
+  ├── app/              # Páginas da aplicação
+  ├── components/       # Componentes React
+  │   ├── analysis/    # Componentes de análise e gráficos
+  │   ├── cards/       # Componentes de cartões financeiros
+  │   ├── categories/  # Componentes de categorias
+  │   └── transactions/# Componentes de transações
+  ├── constants/       # Constantes e dados mock
+  ├── styles/          # Arquivos de estilo
+  ├── types/           # Definições de tipos TypeScript
+  └── utils/           # Funções utilitárias
+```
 
-- Next.js com App Router
+## Como Executar
 
-- React
+1. Clone o repositório
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Execute o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-- CSS Puro
+## Scripts Disponíveis
 
-- Lucide Icons
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run start` - Inicia o servidor de produção
+- `npm run lint` - Executa o linter
+- `npm run format` - Formata os arquivos com Prettier
